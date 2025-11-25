@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: tgymnich/fork-sync@v1.8
         with:
-          github_token: ${{ github.token }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           owner: sansan0
           head: master
           base: master
